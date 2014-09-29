@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="agileVale" class="no-js" ng-controller="ConferenceCtrl">
+<html ng-app="RupyBr" class="no-js" ng-controller="ConferenceCtrl">
 <head>
   <meta charset="utf-8">
   <title>{{conference.name}} {{conference.slogan}}</title>
@@ -7,18 +7,16 @@
   <meta name="viewport" content="width=device-width">
   <meta property="og:locale" content="pt_BR">
 
-  <meta property="og:url" content="http://www.agilevale.com.br">
-
-  <meta property="og:title" content="Agile Vale - Agilidade e evolução">
-  <meta property="og:site_name" content="Agile Vale">
-
-  <meta property="og:description" content="O Agile Vale é uma das maiores conferências sobre metodologias ágeis e engenharia de software do Brasil.">
-
-  <meta property="og:image" content="http://www.agilevale.com.br/images/og-cover.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="600"> 
+  <meta property="og:title" content="Rupy Brazil 2014 - Ruby, Python, JavaScript on the edge">
+  <meta property="og:description" content="RuPy é um evento único que reúne comunidades de diferentes linguagens de programação, como: Ruby, Python, JavaScript e tecnologias relacionadas.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="http://rupy.com.br">
+  <meta property="og:image" content="http://2013.rupy.com.br/public/images/share-rupy.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+
+  <meta itemprop="image" content="http://2013.rupy.com.br/public/images/share-rupy.png">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
@@ -36,9 +34,10 @@
       <!-- Add your site or application content here -->
 
       <div class="main">
-        <header class="main-header">
+        <header class="main-header" style="background-image: url({{conference.cover}});">
           <article class="row">
-            <img src="images/logo.svg" alt="Agile Vale 2014" class="logo">
+
+            <img ng-src="{{conference.logo.thumb}}" alt="{{conference.name}}" class="logo">
 
             <h1 class="main-title">{{conference.name}}</h1>
 
@@ -73,7 +72,7 @@
           </article>
         </section>
 
-        <section class="programming" ng-hide="conference.release">
+        <section class="programming" ng-hide="true">
 
           <h1>PROGRAMAÇÃO</h1>
 
@@ -145,15 +144,15 @@
       </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <!--  <script>
+      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-34314898-1');
        ga('send', 'pageview');
-     </script> -->
+     </script>
 
      <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>

@@ -1,14 +1,14 @@
-Agile Vale 2014
+RupyBrazil 2014
 ===============
 
-Hello! This is the site of AgileVale conference. You can see the online version clicking [here](http://agilevale.com.br) or by link at repo's description.
+Hello! This is the site of Rupy Brazil conference. You can see the online version clicking [here](http://rupy.com.br) or by link at repo's description.
 
 ##Usage
 
 First of all, you need to clone it ;)
 
 ```
-git clone git@github.com:designa/agile-vale-2014.git
+git clone git@github.com:designa/Rupy-2014.git
 ```
 
 after that, just run:

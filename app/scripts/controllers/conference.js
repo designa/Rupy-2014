@@ -1,4 +1,4 @@
-angular.module('agileVale')
+angular.module('RupyBr')
   .controller('ConferenceCtrl', ['$scope', 'DesignaEvents' , function($scope, DesignaEvents){
       
       DesignaEvents.fetch().then(function(response){

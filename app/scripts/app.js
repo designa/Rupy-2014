@@ -2,17 +2,17 @@
 
 /**
  * @ngdoc overview
- * @name agileVale2014App
+ * @name RupyBr2014App
  * @description
- * # agileVale2014App
+ * # RupyBr2014App
  *
  * Main module of the application.
  */
- angular.module('agileVale', [
+ angular.module('RupyBr', [
   'ngResource',
   'ngSanitize',
   'ngDesignaEvents'
   ])
  .config(function(DesignaEventsProvider){
-  DesignaEventsProvider.setEventName('agilevale');
+  DesignaEventsProvider.setEventName('rupy');
 })
