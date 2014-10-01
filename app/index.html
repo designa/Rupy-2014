@@ -2,7 +2,7 @@
 <html ng-app="RupyBr" class="no-js" ng-controller="ConferenceCtrl" ng-cloak>
 <head>
   <meta charset="utf-8">
-  <title>{{conference.name}} {{conference.slogan}}</title>
+  <title>{{conference.name}} - {{conference.slogan}}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <meta property="og:locale" content="pt_BR">
@@ -72,7 +72,7 @@
           </article>
         </section>
 
-        <section class="programming" ng-hide="true">
+        <section class="programming" ng-show="conference.release">
 
           <h1>PROGRAMAÇÃO</h1>
 
@@ -90,7 +90,7 @@
                     <li ng-repeat="talk in talks | orderBy:'room'">
                       <h2 class="header">
                         <span class="talk-title">{{talk.title}}</span>
-                        <span class="room" ng-show="{{talk.room}}"> {{talk.room}} </span>
+                        <span class="room" ng-show="talk.room"> {{talk.room}} </span>
                         <span class="speaker" ng-repeat="speaker in talk.speakers">
                           {{speaker.name }}, {{speaker.title}}
                         </span>
@@ -108,7 +108,7 @@
 
         </section>
 
-        <section class="local" ng-hide="true">
+        <section class="local" ng-show="false">
           <div class="bg-image"></div>
 
           <article class="row">
